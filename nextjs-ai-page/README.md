@@ -1,43 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# RAG Demo — Next.js AI Page
 
-## Getting Started
+A **Retrieval-Augmented Generation (RAG)** demo using **Next.js**. This project showcases how to build a lightweight AI-powered page that augments LLM responses with context fetched from your content store.
 
-First, run the development server:
+---
+
+## 🚀 Key Features
+
+- Built using **Next.js** (Pages Router)
+- Powered by **Vercel AI SDK** or compatible AI interface for seamless streaming responses
+- Powered by **LlamaIndex** for ingesting documents and context retrieval
+- Demonstrates **RAG**: embedding retrieval, context injection, and prompt augmentation
+- Easy to integrate into your AI-capable applications
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- An OpenAI API key (or another compatible LLM provider)
+- Docker
+
+### Quick Setup
 
 ```bash
+git clone https://github.com/jsphkhan/rag-demo.git
+cd rag-demo/nextjs-ai-page
+npm install   # or yarn install
+cp .env.dist .env
+# Add your environment variables:
+# OPENAI_API_KEY=your_api_key
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
 
 ## Concepts & Visualization
 1. Chunk Overlap

@@ -38,6 +38,14 @@ export default function Home() {
         }}>
           Simple RAG Chat
         </Link>
+
+        <Link href="/corporaterag" style={{
+          color: '#007bff',
+          textDecoration: 'underline',
+          fontSize: '0.9rem'
+        }}>
+          Corporate RAG Chat
+        </Link>
       </div>
     </div>
   );
