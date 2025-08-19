@@ -1,0 +1,19 @@
+# Docker compose file
+# starts the following services
+# Qdrant -> http://localhost:6333/dashboard
+
+services:
+  qdrantdb:
+    image: qdrant/qdrant
+    container_name: qdrant-db-rag-demo
+    restart: unless-stopped
+    ports:
+      - 6333:6333 # tcp
+      - 6334:6334 # grpc
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    environment:
+      - QDRANT_HTTP_ADDRESS=0.0.0.0:6333 # Expose on all interfaces
+
+volumes:
+  qdrant_storage:

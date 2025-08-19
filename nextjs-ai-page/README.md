@@ -38,3 +38,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+## Concepts & Visualization
+1. Chunk Overlap
+
+Link: https://claude.ai/public/artifacts/ca08a4bf-8ee1-403d-af54-d6202b59a6e2
+
+```bash
+npm run run:chunk-overlap-visualization
+```
+
+2. Chunk Size
+Link: https://claude.ai/public/artifacts/d8f592f3-7502-4b0a-9c1f-d87baf72914a
+```bash
+```
