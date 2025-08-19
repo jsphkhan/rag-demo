@@ -1,0 +1,26 @@
+{
+  "name": "nextjs-ai-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.0.4",
+    "@ai-sdk/provider-utils": "^2.0.2",
+    "@ai-sdk/ui-utils": "^1.0.2",
+    "@qdrant/js-client-rest": "^1.12.0",
+    "ai": "^4.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "llamaindex": "^0.8.22",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "uuid": "^11.0.3",
+    "zod": "^3.23.8"
+  }
+}
