@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Chat api="/api/chats" />
+        <Chat api="/api/chat/systemprompt" />
       </div>
     </>
   );
