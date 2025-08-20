@@ -13,6 +13,7 @@
     "run:query": "node src/scripts/query-pipeline.mjs",
     "run:chunk-overlap-visualization": "node src/scripts/chunk-overlap-visualization.mjs",
     "run:chunk-size-visualization": "node src/scripts/chunk-size-visualization.mjs",
+    "run:prompt-visualization": "node src/scripts/prompting-visualization.mjs",
     "run:ingestion-corporate": "node src/scripts/ingestion-pipeline-corporate.mjs"
   },
   "dependencies": {
