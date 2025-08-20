@@ -12,7 +12,8 @@
     "run:ingestion": "node src/scripts/ingestion-pipeline.mjs",
     "run:query": "node src/scripts/query-pipeline.mjs",
     "run:chunk-overlap-visualization": "node src/scripts/chunk-overlap-visualization.mjs",
-    "run:chunk-size-visualization": "node src/scripts/chunk-size-visualization.mjs"
+    "run:chunk-size-visualization": "node src/scripts/chunk-size-visualization.mjs",
+    "run:ingestion-corporate": "node src/scripts/ingestion-pipeline-corporate.mjs"
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.0.4",
