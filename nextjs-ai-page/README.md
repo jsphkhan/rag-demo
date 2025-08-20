@@ -48,4 +48,5 @@ npm run run:chunk-overlap-visualization
 2. Chunk Size
 Link: https://claude.ai/public/artifacts/d8f592f3-7502-4b0a-9c1f-d87baf72914a
 ```bash
+npm run run:chunk-size-visualization
 ```

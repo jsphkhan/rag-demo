@@ -16,6 +16,18 @@ import { stdin as input, stdout as output } from "process";
 
 import { getSystemPromptWithContext } from './utils/llm.js';
 
+// system prompt
+export const systemPrompt = `You are a helpful assistant
+
+## Rules:
+- Always respond concisely and in a clear, engaging tone.
+- Do not mention your knowledge cut-off date or training data.
+- Do not hallucinate or make up answers. 
+- Answer only using the provided context.
+- If the context does not contain enough information, mention politely that you don't have that information. Do not mention context in your response.
+- Do not mention your training data, sources of data.
+`;
+
 // set embedding model
 Settings.embedModel = new OpenAIEmbedding({
     modelType: 'text-embedding-3-small'
@@ -50,8 +62,8 @@ async function runQuery() {
         });
         const retrievedContext = textArr.join('\n\n');
         
-        const contextedSystemPrompt = getSystemPromptWithContext(retrievedContext);
-        // console.log('------ Contexted System Prompt: ', contextedSystemPrompt);
+        const contextedSystemPrompt = getSystemPromptWithContext(systemPrompt, retrievedContext);
+        console.log('------ Contexted System Prompt: ', contextedSystemPrompt);
 
         const result = streamText({
             model: openai('gpt-4o-mini'),
