@@ -5,6 +5,7 @@
 ## Presentation Date
 `August 21, 2025`
 
+## Details
 This project showcases muitple apps and scripts on how to build a lightweight AI-powered page that augments LLM responses with context fetched from your content store.
 
 ---
