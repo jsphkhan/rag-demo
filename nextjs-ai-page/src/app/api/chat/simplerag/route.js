@@ -8,6 +8,7 @@
  * News link: https://www.liverpoolfc.com/news/official-liverpool-are-2024-25-premier-league-champions
 */
 
+import { systemPrompt } from '@/scripts/query-pipeline.mjs';
 import { openai } from '@ai-sdk/openai';
 import { streamText, convertToCoreMessages } from 'ai';
 
@@ -66,7 +67,7 @@ export async function POST(req) {
   const result = streamText({
     model: openai('gpt-4o-mini'),
     temperature: 0,
-    system: sysPrompt,
+    system: augmentedSystemPrompt,
     messages: coreMessages,
     maxTokens: 100
   });

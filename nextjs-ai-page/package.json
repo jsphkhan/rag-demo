@@ -11,10 +11,11 @@
     "run:prompt": "node src/scripts/prompt-engineering.mjs",
     "run:ingestion": "node src/scripts/ingestion-pipeline.mjs",
     "run:query": "node src/scripts/query-pipeline.mjs",
-    "run:chunk-overlap-visualization": "node src/scripts/chunk-overlap-visualization.mjs",
-    "run:chunk-size-visualization": "node src/scripts/chunk-size-visualization.mjs",
-    "run:prompt-visualization": "node src/scripts/prompting-visualization.mjs",
-    "run:ingestion-corporate": "node src/scripts/ingestion-pipeline-corporate.mjs"
+    "run:ingestion-corporate": "node src/scripts/ingestion-pipeline-corporate.mjs",
+    "run:chunk-overlap-visualization": "node src/scripts/visualizations/chunk-overlap-visualization.mjs",
+    "run:chunk-size-visualization": "node src/scripts/visualizations/chunk-size-visualization.mjs",
+    "run:prompt-visualization": "node src/scripts/visualizations/prompting-visualization.mjs",
+    "run:llm-providers-visualization": "node src/scripts/visualizations/llm-providers-visualization.mjs"
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.0.4",
